@@ -1,2 +1,2 @@
-# adaptsys-web
-A website for the Adaptsys project.
+# Adaptsys website
+A website for the Adaptsys project built with Jekyll
