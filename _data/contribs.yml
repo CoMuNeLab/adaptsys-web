@@ -1,0 +1,13 @@
+papers:
+  - title: first paper
+    year: 2024
+    journal: best journal
+    authors:
+      - me
+      - you
+  - title: second paper
+    year: 2025
+    journal: best journal
+    authors:
+      - me
+      - you
