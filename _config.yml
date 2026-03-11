@@ -32,7 +32,7 @@ github_username: CoMuNeLab
 author:
   name: "Adaptsys Project"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "ThisCoMuNeLab Project." # Note: Markdown is allowed
+  bio: "A CoMuNeLab Project." # Note: Markdown is allowed
   location: "CoMuNeLab"
   links:
     - label: "GitHub"
@@ -42,7 +42,8 @@ author:
 # Build settings
 # theme: minima
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: default
+minimal_mistakes_skin_dark: dark
 plugins:
   - jekyll-feed
 # Exclude from processing.
@@ -64,3 +65,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  papers:
+    output: true
+  talks:
+    output: true

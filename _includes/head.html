@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" id="main_source">
+{% if site.minimal_mistakes_skin_dark %}
+<script>
+    // Set the theme
+    function setTheme(theme) {
+        let source = document.getElementById('main_source');
+        if (theme == "dark") {
+            source.setAttribute('href', "{{ '/assets/css/main_dark.css' | relative_url }}");
+        } else {
+            source.setAttribute('href', "{{ '/assets/css/main.css' | relative_url }}");
+        }
+    }
+    // Toggle between light.css and dark.css
+    function toggleTheme() {
+        // Select the <link> element
+        let source = document.getElementById('main_source');
+        // Toggle between light.css and dark.css
+        if (source.getAttribute('href') == "{{ '/assets/css/main.css' | relative_url }}") {
+            setTheme('dark')
+        } else {
+            setTheme('light')
+        }
+    }
+
+    // detect initial value
+    const prefersLightTheme = window.matchMedia('(prefers-color-scheme: light)');
+    if (prefersLightTheme.matches) {
+        setTheme('light')
+    } else {
+        setTheme('dark')
+    }
+
+    // Define a handler function to run when the preference changes
+    function handleColorSchemeChange(event) {
+      if (event.matches) {
+          setTheme('light');
+      } else {
+          setTheme('dark')
+      }
+    }
+
+    // Add the listener
+    prefersLightTheme.addEventListener('change', handleColorSchemeChange);
+</script>
+{% endif %}

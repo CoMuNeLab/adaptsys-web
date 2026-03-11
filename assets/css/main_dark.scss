@@ -1,0 +1,9 @@
+---
+search: false
+---
+
+@charset "utf-8";
+
+$background-color: #333333;
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin_dark | default: 'dark' }}"; // skin
+@import "minimal-mistakes"; // main partials
