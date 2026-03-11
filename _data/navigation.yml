@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "Team"
     url: /team/
+  - title: "Production"
+    url: /papers/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
